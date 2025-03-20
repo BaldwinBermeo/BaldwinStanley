@@ -188,5 +188,7 @@ server <- function(input, output) {
   digits = 0)
 }
 
+rsconnect::writeManifest()
+
 # Create the Shiny app
 shinyApp(ui = ui, server = server)
